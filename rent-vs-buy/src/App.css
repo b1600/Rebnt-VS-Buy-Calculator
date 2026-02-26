@@ -1,0 +1,284 @@
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px 18px 40px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(234, 240, 255, 0.7);
+}
+
+.title {
+  margin: 6px 0 8px;
+  font-size: 34px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 0;
+  max-width: 720px;
+  color: rgba(234, 240, 255, 0.78);
+}
+
+.btn {
+  border: 1px solid rgba(234, 240, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(234, 240, 255, 0.92);
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.05s ease, background 0.15s ease, border-color 0.15s ease;
+}
+.btn:hover {
+  border-color: rgba(234, 240, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+}
+.btn:active {
+  transform: translateY(1px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.panel {
+  border: 1px solid rgba(234, 240, 255, 0.14);
+  background: rgba(7, 10, 18, 0.55);
+  border-radius: 18px;
+  padding: 14px;
+  backdrop-filter: blur(10px);
+}
+
+.panelTitle {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(234, 240, 255, 0.75);
+}
+
+.group {
+  border-top: 1px solid rgba(234, 240, 255, 0.1);
+  padding-top: 12px;
+  margin-top: 12px;
+}
+.group:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.groupTitle {
+  font-size: 13px;
+  font-weight: 650;
+  margin: 0 0 10px;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+.fieldTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+.fieldLabel {
+  font-size: 13px;
+  color: rgba(234, 240, 255, 0.92);
+}
+.fieldHint {
+  font-size: 12px;
+  color: rgba(234, 240, 255, 0.6);
+}
+.fieldControl {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  border: 1px solid rgba(234, 240, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.fieldAffix {
+  padding: 9px 10px;
+  color: rgba(234, 240, 255, 0.7);
+  font-size: 13px;
+}
+.fieldInput {
+  width: 100%;
+  padding: 9px 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgba(234, 240, 255, 0.96);
+  font-size: 14px;
+}
+.fieldInput::-webkit-outer-spin-button,
+.fieldInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid rgba(234, 240, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 12px;
+}
+.card.good {
+  border-color: rgba(34, 211, 238, 0.35);
+  background: linear-gradient(180deg, rgba(34, 211, 238, 0.12), rgba(255, 255, 255, 0.04));
+}
+.card.bad {
+  border-color: rgba(248, 113, 113, 0.35);
+  background: linear-gradient(180deg, rgba(248, 113, 113, 0.12), rgba(255, 255, 255, 0.04));
+}
+
+.cardLabel {
+  font-size: 12px;
+  color: rgba(234, 240, 255, 0.7);
+}
+.cardValue {
+  margin-top: 4px;
+  font-size: 26px;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+.cardSub {
+  margin-top: 6px;
+  font-size: 13px;
+  color: rgba(234, 240, 255, 0.78);
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 8px;
+}
+.miniLabel {
+  font-size: 12px;
+  color: rgba(234, 240, 255, 0.7);
+}
+.miniValue {
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.chartWrap {
+  margin-top: 10px;
+  border: 1px solid rgba(234, 240, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 12px;
+}
+.chartHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.chartTitle {
+  font-size: 13px;
+  font-weight: 650;
+}
+.chartLegend {
+  font-size: 12px;
+  color: rgba(234, 240, 255, 0.7);
+}
+.sparkline {
+  width: 100%;
+  height: 68px;
+  margin-top: 8px;
+}
+.sparklineLine {
+  stroke: rgba(99, 102, 241, 0.9);
+}
+.chartFoot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(234, 240, 255, 0.6);
+}
+
+.details {
+  margin-top: 10px;
+  border: 1px solid rgba(234, 240, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 12px;
+}
+.detailsTitle {
+  font-size: 13px;
+  font-weight: 650;
+  margin-bottom: 8px;
+}
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.detailLabel {
+  font-size: 12px;
+  color: rgba(234, 240, 255, 0.68);
+}
+.detailValue {
+  margin-top: 3px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.note {
+  margin-top: 12px;
+  color: rgba(234, 240, 255, 0.72);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer {
+  margin-top: 16px;
+  color: rgba(234, 240, 255, 0.55);
+  font-size: 12px;
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .fields {
+    grid-template-columns: 1fr;
+  }
+}
